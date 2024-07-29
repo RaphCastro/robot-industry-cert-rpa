@@ -1,6 +1,7 @@
 from robocorp.tasks import task
-from steps.extract import main
+from steps.extract import RobotOrderAutomation
 
 @task
 def minimal_task():
-    main()
+    robot = RobotOrderAutomation()
+    robot.execute()
